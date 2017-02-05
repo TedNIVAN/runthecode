@@ -20,25 +20,25 @@ void enable(string port){
 
 void disable(){
     if(system("pm2 delete runthecode") < 0){
-        cout << "Error: Unable to disable Adok Data Center." << endl;
+        cout << "Error: Unable to disable data center." << endl;
     }
 }
 
 void start(){
     if(system("pm2 start runthecode") < 0){
-        cout << "Error: Unable to start Adok Data Center." << endl;
+        cout << "Error: Unable to start data center." << endl;
     }
 }
 
 void stop(){
     if(system("pm2 stop runthecode") < 0){
-        cout << "Error: Unable to stop Adok Data Center." << endl;
+        cout << "Error: Unable to stop data center." << endl;
     }
 }
 
 void restart(){
     if(system("pm2 restart runthecode") < 0){
-        cout << "Error: Unable to restart Adok Data Center." << endl;
+        cout << "Error: Unable to restart data center." << endl;
     }
 }
 
